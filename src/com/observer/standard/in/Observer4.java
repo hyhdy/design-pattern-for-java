@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.observer.demo1;
+package com.observer.standard.in;
 
 /**
  * @author hyh
@@ -10,7 +10,7 @@ package com.observer.demo1;
 public class Observer4 implements IObserver {
 
 	@Override
-	public void update(Object subject,Object o) {
+	public void update(ISubject subject,Object o) {
 		Subject2 s=(Subject2) subject;
 		System.out.println("\n我是4号观察者,无论观察目标有没有改变我都会更新");
 		System.out.println("进行更新");

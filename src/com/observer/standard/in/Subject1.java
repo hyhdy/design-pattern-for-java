@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.observer.demo1;
+package com.observer.standard.in;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,11 +28,11 @@ public class Subject1 implements ISubject{
 				observer.update(this,o);
 			}
 	}
-
+	@Override
 	public void addObserver(IObserver observer){
 		observers.add(observer);
 	}
-	
+	@Override
 	public void deleteObserver(IObserver observer){
 		observers.remove(observer);
 	}
@@ -51,6 +51,11 @@ public class Subject1 implements ISubject{
 
 	public void setChanged(boolean changed) {
 		this.changed = changed;
+	}
+
+	@Override
+	public void notifyUpdate() {
+		notifyUpdate(null);
 	}
 
 	

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.observer.demo1;
+package com.observer.standard.in;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +51,12 @@ public class Subject2 implements ISubject{
 
 	public void setChanged(boolean changed) {
 		this.changed = changed;
+	}
+
+	@Override
+	public void notifyUpdate() {
+		notifyUpdate(null);
+		
 	}
 
 	

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.observer.demo1;
+package com.observer.standard.in;
 
 /**
  * @author hyh
@@ -13,5 +13,5 @@ public interface IObserver {
 	 * @param subject:观察的目标
 	 * @param o:额外信息
 	 */
-		public void update(Object subject, Object o);
+	public void update(ISubject subject, Object o);
 }

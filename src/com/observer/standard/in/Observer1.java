@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.observer.demo1;
+package com.observer.standard.in;
 
 /**
  * @author hyh
@@ -10,7 +10,7 @@ package com.observer.demo1;
 public class Observer1 implements IObserver {
 
 	@Override
-	public void update(Object subject,Object o) {
+	public void update(ISubject subject,Object o) {
 		//强转成具体观察目标,抽象观察目标使用接口而不是使用抽象类实现的不好之处就是得强转
 		Subject1 s=(Subject1) subject;
 		System.out.println("\n我是1号观察者,只有观察目标有改变我才更新");

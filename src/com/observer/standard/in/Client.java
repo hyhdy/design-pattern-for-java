@@ -1,4 +1,4 @@
-package com.observer.demo1;
+package com.observer.standard.in;
 
 public class Client {
 
