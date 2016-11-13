@@ -1,6 +1,6 @@
 package com.observer.standard;
 
-public class ConcreteObserver implements AbsObserver {
+public class ConcreteObserver implements IObserver {
 	private String name;
 	@Override
 	public void update(AbsSubject s, Object o) {

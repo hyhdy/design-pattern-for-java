@@ -1,6 +1,6 @@
 package com.observer.standard;
 
-public interface AbsObserver {
+public interface IObserver {
 	/**
 	 * 定义观察者的更新行为
 	 * @param s：抽象主题对象（被观察者）

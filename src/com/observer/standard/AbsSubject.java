@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbsSubject {
-	private List<AbsObserver> observers;//观察者集合
+	private List<IObserver> observers;//观察者集合
 	private boolean changed=false;//标志被观察对象是否发生改变
 	
 	public AbsSubject() {
 		super();
-		observers=new ArrayList<AbsObserver>();
+		observers=new ArrayList<IObserver>();
 	}
 
-	public void addObserver(AbsObserver o){
+	public void addObserver(IObserver o){
 		observers.add(o);
 	}
 	
-	public void deleteObserver(AbsObserver o){
+	public void deleteObserver(IObserver o){
 		if(observers.size()==0){
 			return;
 		}
@@ -29,7 +29,7 @@ public abstract class AbsSubject {
 	
 	public void notifyUpdate(Object obj){
 		if(changed){
-			for(AbsObserver o:observers){
+			for(IObserver o:observers){
 				o.update(this, obj);
 			}
 		}
