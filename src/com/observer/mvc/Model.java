@@ -8,10 +8,10 @@ public class Model implements IModel {
 	private String display;//展示数据
 	private boolean changed;//是否发生改变
 	
-	private SubView view;
+	private IView view;
 	
 	@Override
-	public void addView(SubView sv) {
+	public void addView(IView sv) {
 		view=sv;
 	}
 

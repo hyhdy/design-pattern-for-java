@@ -1,22 +1,25 @@
 ﻿/**
  * 
  */
-package com.observer.standard.inter;
+package com.observer.standard.inter.example;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observer;
 
+import com.observer.standard.inter.IObserver;
+import com.observer.standard.inter.ISubject;
+
 /**
  * @author hyh
  *
  */
-public class Subject2 implements ISubject{
+public class Subject1 implements ISubject{
 	private String name;
 	private boolean changed;
 	private List<IObserver> observers;
 		
-	public Subject2(String name) {
+	public Subject1(String name) {
 		super();
 		this.name = name;
 		observers=new ArrayList<IObserver>();
@@ -28,11 +31,11 @@ public class Subject2 implements ISubject{
 				observer.update(this,o);
 			}
 	}
-
+	@Override
 	public void addObserver(IObserver observer){
 		observers.add(observer);
 	}
-	
+	@Override
 	public void deleteObserver(IObserver observer){
 		observers.remove(observer);
 	}
@@ -56,7 +59,6 @@ public class Subject2 implements ISubject{
 	@Override
 	public void notifyUpdate() {
 		notifyUpdate(null);
-		
 	}
 
 	

@@ -1,10 +1,10 @@
 ﻿package com.observer.mvc;
 
 public class Controller {
-	private SubView view;
+	private IView view;
 	private Model model;
 	
-	public Controller(SubView view) {
+	public Controller(IView view) {
 		super();
 		this.view = view;
 		

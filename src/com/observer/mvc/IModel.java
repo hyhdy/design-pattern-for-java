@@ -4,7 +4,7 @@ public interface IModel {
 	/**
 	 * 添加视图
 	 */
-	public void addView(SubView sv);
+	public void addView(IView sv);
 	/**
 	 * 删除视图
 	 */

@@ -5,13 +5,13 @@ package com.observer.standard.inter;
 
 /**
  * @author hyh
- *鎶借薄瑙傚療鑰呮帴鍙?
+ *观察者接口
  */
 public interface IObserver {
 	/**
-	 * 
-	 * @param subject:瑙傚療鐨勭洰鏍?
-	 * @param o:棰濆淇℃伅
+	 * 观察者方法
+	 * @param subject：抽象主题接口（被观察者抽象层对象）
+	 * @param o：额外信息
 	 */
 	public void update(ISubject subject, Object o);
 }

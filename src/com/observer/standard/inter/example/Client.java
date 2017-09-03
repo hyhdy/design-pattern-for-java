@@ -1,4 +1,6 @@
-﻿package com.observer.standard.inter;
+﻿package com.observer.standard.inter.example;
+
+import com.observer.standard.inter.IObserver;
 
 public class Client {
 

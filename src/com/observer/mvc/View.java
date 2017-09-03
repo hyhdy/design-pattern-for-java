@@ -3,7 +3,7 @@
 import com.observer.simple.inter.Observer;
 import com.observer.simple.inter.Subject;
 
-public class View implements SubView {
+public class View implements IView {
 	private Controller controller;//控制器
 	
 	public View() {
