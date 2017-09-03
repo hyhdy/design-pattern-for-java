@@ -1,4 +1,4 @@
-package com.observer.simple;
+﻿package com.observer.simple;
 
 public interface IObserver {
 	

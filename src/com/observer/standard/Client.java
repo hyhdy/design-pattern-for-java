@@ -1,4 +1,4 @@
-package com.observer.standard;
+﻿package com.observer.standard;
 
 public class Client {
 
@@ -7,7 +7,7 @@ public class Client {
 		IObserver o=new ConcreteObserver();
 		
 		s.addObserver(o);
-		s.setChanged(true);//���ù۲�Ŀ�귢���˸ı�
+		s.setChanged(true);//设置观察目标发生了改变
 		
 		s.notifyUpdate();
 

@@ -1,11 +1,15 @@
-package com.observer.standard;
+ï»¿package com.observer.standard;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * æŠ½è±¡ä¸»é¢˜ç±»
+ * @author hyh
+ *
+ */
 public abstract class AbsSubject {
-	private List<IObserver> observers;//¹Û²ìÕß¼¯ºÏ
-	private boolean changed=false;//±êÖ¾±»¹Û²ì¶ÔÏóÊÇ·ñ·¢Éú¸Ä±ä
+	private List<IObserver> observers;//è§‚å¯Ÿè€…é›†åˆ
+	private boolean changed=false;//æ ‡å¿—è¢«è§‚å¯Ÿå¯¹è±¡æ˜¯å¦å‘ç”Ÿæ”¹å˜
 	
 	public AbsSubject() {
 		super();

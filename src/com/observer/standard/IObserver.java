@@ -1,10 +1,10 @@
-package com.observer.standard;
+锘縫ackage com.observer.standard;
 
 public interface IObserver {
 	/**
-	 * 定义观察者的更新行为
-	 * @param s：抽象主题对象（被观察者）
-	 * @param o：传递的额外信息
+	 * 瀹氫箟瑙傚療鑰呯殑鏇存柊琛屼负
+	 * @param s锛氭娊璞′富棰樺璞★紙琚瀵熻�咃級
+	 * @param o锛氫紶閫掔殑棰濆淇℃伅
 	 */
 	public void update(AbsSubject s,Object o);
 }

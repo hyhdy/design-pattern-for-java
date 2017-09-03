@@ -1,10 +1,10 @@
-package com.observer.mvc;
+锘縫ackage com.observer.mvc;
 
 public class Client {
 
 	public static void main(String[] args) {
 		View view=new View();
-		//模拟点击界面
+		//妯℃嫙鐐瑰嚮鐣岄潰
 		view.touch();
 		
 	}

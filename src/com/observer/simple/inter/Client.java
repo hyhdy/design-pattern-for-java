@@ -1,4 +1,4 @@
-package com.observer.simple.in;
+﻿package com.observer.simple.inter;
 
 public class Client {
 

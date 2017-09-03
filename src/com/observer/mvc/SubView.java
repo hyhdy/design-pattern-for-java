@@ -1,8 +1,8 @@
-package com.observer.mvc;
+锘縫ackage com.observer.mvc;
 
 public interface SubView {
 	/**
-	 * 更新，采用拉模型
+	 * 鏇存柊锛岄噰鐢ㄦ媺妯″瀷
 	 * @param m
 	 */
 	public void update(IModel m);

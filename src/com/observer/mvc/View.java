@@ -1,10 +1,10 @@
-package com.observer.mvc;
+ï»¿package com.observer.mvc;
 
-import com.observer.simple.in.Observer;
-import com.observer.simple.in.Subject;
+import com.observer.simple.inter.Observer;
+import com.observer.simple.inter.Subject;
 
 public class View implements SubView {
-	private Controller controller;//¿ØÖÆÆ÷
+	private Controller controller;//æ§åˆ¶å™¨
 	
 	public View() {
 		super();
@@ -18,19 +18,19 @@ public class View implements SubView {
 	}
 
 	public void touch(){
-		System.out.println("Ä£ÄâÆÁÄ»²Ù×÷£¬´¥·¢ÏìÓ¦ÊÂ¼ş£¬½«ÊÂ¼ş´«¸øcontroller´¦Àí");
-		//½«ÊÂ¼ş´«¸øcontroller´¦Àí
+		System.out.println("æ¨¡æ‹Ÿå±å¹•æ“ä½œï¼Œè§¦å‘å“åº”äº‹ä»¶ï¼Œå°†äº‹ä»¶ä¼ ç»™controllerå¤„ç†");
+		//å°†äº‹ä»¶ä¼ ç»™controllerå¤„ç†
 		controller.doSomething();
 	}
 	
 	/**
-	 * Ë¢ĞÂ½çÃæ
+	 * åˆ·æ–°ç•Œé¢
 	 */
 	public void refreshView(Model model){
 		String name=model.getName();
 		String display=model.getDisplay();
-		System.out.println("ÊÕµ½ModelÍ¨Öª£¬¸üĞÂ½çÃæ");
-		System.out.println("Model°üº¬ÒÔÏÂÊı¾İ:");
+		System.out.println("æ”¶åˆ°Modelé€šçŸ¥ï¼Œæ›´æ–°ç•Œé¢");
+		System.out.println("ModelåŒ…å«ä»¥ä¸‹æ•°æ®:");
 		System.out.println("name="+name+" ,display="+display);
 	}
 

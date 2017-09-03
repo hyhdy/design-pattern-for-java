@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
-encoding//src/com/observer/standard/in=UTF-8
-encoding//src/com/observer/standard/in/ISubject.java=UTF-8
+encoding//src/com/observer/standard/inter=UTF-8
+encoding//src/com/observer/standard/inter/ISubject.java=UTF-8
+encoding/<project>=UTF-8

@@ -1,4 +1,4 @@
-package com.observer.standard;
+﻿package com.observer.standard;
 
 public class ConcreteObserver implements IObserver {
 	private String name;

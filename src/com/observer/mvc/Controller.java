@@ -1,4 +1,4 @@
-package com.observer.mvc;
+锘縫ackage com.observer.mvc;
 
 public class Controller {
 	private SubView view;
@@ -9,20 +9,20 @@ public class Controller {
 		this.view = view;
 		
 		model=new Model();
-		//将view与model绑定
+		//灏唙iew涓巑odel缁戝畾
 		model.addView(view);
 	}
 	
 	public void doSomething(){
-		System.out.println("controller响应view的界面操作事件，通知model更新");
+		System.out.println("controller鍝嶅簲view鐨勭晫闈㈡搷浣滀簨浠讹紝閫氱煡model鏇存柊");
 		
-		//模拟model更新
-		model.setName("杰伦");
-		model.setDisplay("哎呦，不错哦");
+		//妯℃嫙model鏇存柊
+		model.setName("鏉颁鸡");
+		model.setDisplay("鍝庡懄锛屼笉閿欏摝");
 		
-		//设置改变
+		//璁剧疆鏀瑰彉
 		model.setChanged(true);
-		System.out.println("model发生了改变，通知view更新");
+		System.out.println("model鍙戠敓浜嗘敼鍙橈紝閫氱煡view鏇存柊");
 		model.notifyUpdate();
 		
 	}

@@ -1,8 +1,8 @@
-package com.observer.simple.in;
+﻿package com.observer.simple.inter;
 
 
 public class ConCreteSubject implements Subject {
-	private boolean changed;//��־�Ƿ����˱仯
+	private boolean changed;//标志是否发生了变化
 	private Observer observer;
 
 	@Override

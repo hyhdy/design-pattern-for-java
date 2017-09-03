@@ -1,22 +1,22 @@
-package com.observer.simple.in;
+ï»¿package com.observer.simple.inter;
 /**
- * ³éÏóÖ÷Ìâ½Ó¿Ú£¬¶¨ÒåĞĞÎª
+ * æŠ½è±¡ä¸»é¢˜æ¥å£ï¼Œå®šä¹‰è¡Œä¸º
  * @author hyh
  *
  */
 public interface Subject {
 	/**
-	 * ×¢²á¹Û²ìÕß
-	 * @param o:³éÏó¹Û²ìÕß
+	 * æ³¨å†Œè§‚å¯Ÿè€…
+	 * @param o:æŠ½è±¡è§‚å¯Ÿè€…
 	 */
 	public void registerObserver(Observer o);
 	/**
-	 * ÒÆ³ı¹Û²ìÕß
+	 * ç§»é™¤è§‚å¯Ÿè€…
 	 * @param o
 	 */
 	public void removeObserver(Observer o);
 	/**
-	 * Í¨Öª¹Û²ìÕß¸üĞÂ
+	 * é€šçŸ¥è§‚å¯Ÿè€…æ›´æ–°
 	 */
 	public void notifyUpdate();
 	

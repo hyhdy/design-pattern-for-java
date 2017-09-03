@@ -1,12 +1,12 @@
-package com.observer.mvc;
+ï»¿package com.observer.mvc;
 
 public class Model implements IModel {
 	/**
-	 * ModelµÄÒ»Ğ©ÊôĞÔ
+	 * Modelçš„ä¸€äº›å±æ€§
 	 */
-	private String name;//Ãû×Ö
-	private String display;//Õ¹Ê¾Êı¾İ
-	private boolean changed;//ÊÇ·ñ·¢Éú¸Ä±ä
+	private String name;//åå­—
+	private String display;//å±•ç¤ºæ•°æ®
+	private boolean changed;//æ˜¯å¦å‘ç”Ÿæ”¹å˜
 	
 	private SubView view;
 	

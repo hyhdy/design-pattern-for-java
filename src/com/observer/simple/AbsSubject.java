@@ -1,9 +1,13 @@
-package com.observer.simple;
+﻿package com.observer.simple;
 
-import com.observer.simple.in.Observer;
-
+import com.observer.simple.inter.Observer;
+/**
+ * 抽象主题类
+ * @author hyh
+ *
+ */
 public abstract class AbsSubject {
-	private boolean changed;//��־�Ƿ����˱仯
+	private boolean changed;//标志是否发生了变化
 	private IObserver observer;
 
 	public void notifyUpdate() {

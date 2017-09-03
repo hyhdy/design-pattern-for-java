@@ -1,16 +1,16 @@
-package com.observer.mvc;
+锘縫ackage com.observer.mvc;
 
 public interface IModel {
 	/**
-	 * 添加视图
+	 * 娣诲姞瑙嗗浘
 	 */
 	public void addView(SubView sv);
 	/**
-	 * 删除视图
+	 * 鍒犻櫎瑙嗗浘
 	 */
 	public void deleteView();
 	/**
-	 * 通知更新
+	 * 閫氱煡鏇存柊
 	 */
 	public void notifyUpdate();
 }

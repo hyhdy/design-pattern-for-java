@@ -1,6 +1,6 @@
-﻿package com.observer.simple;
+﻿package com.observer.simple.inter;
 
-public class ConcreteObserver implements IObserver {
+public class ConcreteObserver implements Observer {
 
 	@Override
 	public void update() {

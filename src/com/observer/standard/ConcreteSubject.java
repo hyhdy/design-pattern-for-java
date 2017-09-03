@@ -1,5 +1,5 @@
-package com.observer.standard;
+锘縫ackage com.observer.standard;
 
 public class ConcreteSubject extends AbsSubject {
-	//写具体的业务逻辑
+	//鍐欏叿浣撶殑涓氬姟閫昏緫
 }
